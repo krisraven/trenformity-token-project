@@ -11,7 +11,6 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const alchemyWeb3 = createAlchemyWeb3(API_URL);
 const contract = require("../artifacts/contracts/ttpNFT.sol/TTPNFT.json");
 
-// const contractAddress = "0x8044B333AA321b4Cc93CAB95e11E5Af7e584759D";
 const nftContract = new alchemyWeb3.eth.Contract(contract.abi, contractAddress);
 const METAMASK_PUBLIC_KEY = process.env.METAMASK_PUBLIC_KEY;
 
